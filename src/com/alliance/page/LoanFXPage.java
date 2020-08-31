@@ -1,8 +1,6 @@
 package com.alliance.page;
 
 import java.io.IOException;
-import java.util.Set;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class LoanFXPage {
 
-	@FindBy (id = "DashBoard")
+	@FindBy (id = "DashBoard") 
 	private WebElement dashbord;
 	
 	

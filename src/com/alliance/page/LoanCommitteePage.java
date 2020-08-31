@@ -24,7 +24,7 @@ public class LoanCommitteePage {
 	private WebElement dateOfInstallment;
 	
 	@FindBy (id = "APPROVE")
-	private WebElement approveButton;
+	private WebElement approveButton; 
 	
 	
 	public void enterLoanCommitteeDetails() throws InterruptedException {

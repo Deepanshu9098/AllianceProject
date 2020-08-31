@@ -31,7 +31,21 @@ public class ExcellReader {
        fis.close();
 		}
 
-	
+	// returns the row count in a sheet
+
+		public int getRowCount(String sheetName) {
+			int index = workbook.getSheetIndex(sheetName);
+			if (index == -1)
+				return 0;
+			else {
+				sheet = workbook.getSheetAt(index);
+				int number = sheet.getLastRowNum() + 1;
+				return number;
+			}
+
+		}
+
+		// returns the data from a cell
 	public String getCellData(String sheetname, String colName, int rowNum) {
 		try {
 			int col_Num = -1;

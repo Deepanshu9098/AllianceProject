@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.alliance.qa.testcases.LoanCreationTest">
+      <class name="com.alliance.qa.testcases.DataProviderTest">
         <methods>
-          <include name="configBeforeClass"/>
-          <include name="loanCommitteeTest"/>
+          <include name="termDown"/>
+          <include name="startUpMethed"/>
+          <include name="logInAndFillData"/>
         </methods>
-      </class> <!-- com.alliance.qa.testcases.LoanCreationTest -->
+      </class> <!-- com.alliance.qa.testcases.DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,56 +2,31 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73261" started-at="2020-03-11T13:03:48Z" finished-at="2020-03-11T13:05:01Z">
+  <suite name="Default suite" duration-ms="41443" started-at="2020-08-31T11:06:56Z" finished-at="2020-08-31T11:07:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73261" started-at="2020-03-11T13:03:48Z" finished-at="2020-03-11T13:05:01Z">
-      <class name="com.alliance.qa.testcases.LoanCreationTest">
-        <test-method status="PASS" signature="configBeforeClass()[pri:0, instance:com.alliance.qa.testcases.LoanCreationTest@55f3ddb1]" name="configBeforeClass" is-config="true" duration-ms="4280" started-at="2020-03-11T18:33:48Z" finished-at="2020-03-11T18:33:52Z">
+    <test name="Default test" duration-ms="41443" started-at="2020-08-31T11:06:56Z" finished-at="2020-08-31T11:07:37Z">
+      <class name="com.alliance.qa.testcases.DataProviderTest">
+        <test-method status="PASS" signature="startUpMethed()[pri:0, instance:com.alliance.qa.testcases.DataProviderTest@46d56d67]" name="startUpMethed" is-config="true" duration-ms="41229" started-at="2020-08-31T16:36:56Z" finished-at="2020-08-31T16:37:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configBeforeClass -->
-        <test-method status="FAIL" signature="loanCommitteeTest()[pri:0, instance:com.alliance.qa.testcases.LoanCreationTest@55f3ddb1]" name="loanCommitteeTest" duration-ms="68943" started-at="2020-03-11T18:33:52Z" finished-at="2020-03-11T18:35:01Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- startUpMethed -->
+        <test-method status="FAIL" signature="logInAndFillData(java.lang.String, java.lang.String)[pri:0, instance:com.alliance.qa.testcases.DataProviderTest@46d56d67]" name="logInAndFillData" duration-ms="201" started-at="2020-08-31T16:37:37Z" data-provider="getData" finished-at="2020-08-31T16:37:37Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
             <message>
-              <![CDATA[unknown error: failed to close window in 20 seconds
-  (Session info: chrome=80.0.3987.116)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'NSL-D340', ip: '10.10.51.89', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\DEEPAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56668}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5034f90d986ff701b3e97aa52938e00d]]>
+              <![CDATA[
+Data provider mismatch
+Method: logInAndFillData([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [([Ljava.lang.Object;)[Ljava.lang.Object;@5b6ec132]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to close window in 20 seconds
-  (Session info: chrome=80.0.3987.116)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'NSL-D340', ip: '10.10.51.89', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_121'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.116, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\DEEPAN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56668}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5034f90d986ff701b3e97aa52938e00d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.alliance.page.DashBoardPage.navigateToMainWindow(DashBoardPage.java:92)
-	at com.alliance.qa.testcases.LoanCreationTest.loanCommitteeTest(LoanCreationTest.java:217)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: logInAndFillData([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [([Ljava.lang.Object;)[Ljava.lang.Object;@5b6ec132]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:52)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1278)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1171)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
@@ -71,11 +46,15 @@ Session ID: 5034f90d986ff701b3e97aa52938e00d
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loanCommitteeTest -->
-      </class> <!-- com.alliance.qa.testcases.LoanCreationTest -->
+        </test-method> <!-- logInAndFillData -->
+        <test-method status="PASS" signature="termDown()[pri:0, instance:com.alliance.qa.testcases.DataProviderTest@46d56d67]" name="termDown" is-config="true" duration-ms="0" started-at="2020-08-31T16:37:37Z" finished-at="2020-08-31T16:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termDown -->
+      </class> <!-- com.alliance.qa.testcases.DataProviderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

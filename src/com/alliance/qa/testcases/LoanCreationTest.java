@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.alliance.base.BaseClass;
@@ -16,7 +17,6 @@ import com.alliance.page.LoanAppraisalPage;
 import com.alliance.page.LoanCommitteePage;
 import com.alliance.page.LoanFXPage;
 import com.alliance.page.LogInPage;
-import com.sun.java.swing.plaf.windows.WindowsBorders.DashedBorder;
 
 
 public class LoanCreationTest {
@@ -216,7 +216,7 @@ public class LoanCreationTest {
 
 
 
-
+ 
 
 
 
